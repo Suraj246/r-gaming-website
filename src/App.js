@@ -1,24 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Home from "./Components/Home/Home";
+// import About from "./Components/About/About";
+import Contact from "./Components/Footer/Contact";
+import Games from "./Components/Games";
+import FirstGame from "./Components/GamesInfo/FirstGame";
+import SecondGame from "./Components/GamesInfo/SecondGame";
+import ErrorPage from "./ErrorPage";
+import { NavLink, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <nav>
+        <div className="logo">
+          <h2>Ps5</h2>
+        </div>
+        <div className=" menu-link ">
+          <ul>
+            <li>
+              <NavLink to="" className="a">
+                Home
+              </NavLink>
+            </li>
+            {/* <li><NavLink to="/contact">Contact</NavLink></li> */}
+            {/* <li><NavLink to="/about">About</NavLink></li> */}
+            <li>
+              <NavLink to="/games" className="a">
+                Games
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+        {/* <div className="icons">
+          <i className="bx bxs-download"></i>
+        </div> */}
+      </nav>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/games" element={<Games />} />
+        <Route path="/firstgame" element={<FirstGame />} />
+        <Route path="/secondgame" element={<SecondGame />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </>
   );
 }
 

@@ -1,0 +1,55 @@
+.footer{
+    /* width:fit-content; */
+    /* border: 1px solid #ccc; */
+    padding: 4vw;
+    display: flex;
+    gap: 20px;
+    justify-content:space-between;
+  background-color:#393e46;
+}
+.contact{
+    width:40vw;
+    /* border: 1px solid #ccc; */
+    padding: 3vw;
+    display: block;
+    word-wrap: break-word;
+    color: #fff;
+}
+.contact-heading{
+    font-size:2vw;
+    padding-bottom: 2vw;
+}
+address p {
+    padding-top: 1vw;
+}
+.social-media-links{
+    width:45vw;
+    /* border: 1px solid #ccc; */
+    padding: 1vw;
+    color: #fff;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 3vw;
+}
+.fb, .twi, .insta{
+    /* padding: 1vw; */
+    font-size:3vw;
+    cursor: pointer;
+}
+.fb:hover{
+   color: rgb(0, 0, 241);
+   transition: all 0.3s linear;
+}
+.twi:hover{
+   color: rgb(58, 105, 139);
+   transition: all 0.3s linear;
+}
+.insta:hover{
+   color: rgb(158, 76, 85);
+   transition: all 0.3s;
+}
+hr{
+    height: 34vh;
+    color: #fff;
+}

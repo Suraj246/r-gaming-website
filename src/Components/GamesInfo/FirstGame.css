@@ -1,0 +1,84 @@
+.pubgImage{
+    width:100vw;
+    height: 60vh;
+    object-fit:cover;
+}
+.arrowContent{
+    font-size:1rem;
+}
+.arrowContent:hover{
+    color: #fff;
+}
+.l-arrow{
+    position: absolute;
+    top: 34%;
+    left: 5%;
+    font-size:5rem;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none; 
+}
+.r-arrow{
+    position: absolute;
+    top: 34%;
+    right: 5%;
+    font-size:5rem;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+}
+.game_info{
+    /* border:1px solid #fff; */
+    display: flex;
+    justify-content:space-around;
+    word-wrap: break-word;
+    gap: 20px;
+    color: rgb(249, 245, 245);
+    margin-bottom: 5rem;
+  
+}
+.game_About{
+    padding: 1vw;
+    width:40vw;
+    margin: 1vw;
+    /* border: 1px solid #fff; */
+}
+.gameVersion{
+    padding: 3vw;
+    width:40vw;
+    /* border: 1px solid #fff; */
+    margin: 1vw;
+}
+.gameVersion h3{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.gameVersion p{
+    padding-left: 10px;
+}
+.downloadgame{
+    font-size:1.6vw;
+    color:var(--color);
+    width: auto;
+    background-color:rgb(5, 106, 146);
+    margin-top: 2rem;
+    padding: .4rem;
+    display: inline-block;
+    /* border: 1px solid rgba(255, 255, 255, 1.1) */
+}
+.downloadgame:hover{
+    background-color:rgb(6, 51, 69);
+    transition: .3s linear;
+}
+@media (max-width:852px) {
+    .game_info{
+        flex-wrap: wrap;
+        
+    }
+    .game_About, .gameVersion{
+        width: 100%;
+    }
+    .gameVersion{
+        text-align: center;
+    }
+}
