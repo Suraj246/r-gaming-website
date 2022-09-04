@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/r-gaming-website/static/css/main.1fb1d7a0.css",
+    "main.js": "/r-gaming-website/static/js/main.dbdc1ccb.js",
+    "static/js/787.62564c4a.chunk.js": "/r-gaming-website/static/js/787.62564c4a.chunk.js",
+    "index.html": "/r-gaming-website/index.html",
+    "main.1fb1d7a0.css.map": "/r-gaming-website/static/css/main.1fb1d7a0.css.map",
+    "main.dbdc1ccb.js.map": "/r-gaming-website/static/js/main.dbdc1ccb.js.map",
+    "787.62564c4a.chunk.js.map": "/r-gaming-website/static/js/787.62564c4a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1fb1d7a0.css",
+    "static/js/main.dbdc1ccb.js"
+  ]
+}
